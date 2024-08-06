@@ -178,12 +178,12 @@ impl<T, U: PartialEq<T>> PartialEq<Option<T>> for ArchivedOption<U> {
     }
 }
 
-impl<T: PartialEq<U>, U> PartialEq<ArchivedOption<T>> for Option<U> {
+/* impl<T: PartialEq<U>, U> PartialEq<ArchivedOption<T>> for Option<U> {
     #[inline]
     fn eq(&self, other: &ArchivedOption<T>) -> bool {
         other.eq(self)
     }
-}
+} */
 
 /// An iterator over a reference to the `Some` variant of an `ArchivedOption`.
 ///
